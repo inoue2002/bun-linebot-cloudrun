@@ -1,0 +1,22 @@
+{
+  "name": "bun-linebot",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun --watch run index.ts",
+    "deploy:build": "dotenv cross-var 'gcloud builds submit --project $PROJECT_ID --config=./cloud-build.yml --substitutions=_SERVICE_NAME=$SERVICE_NAME'",
+    "deploy": "bun run deploy:build && cross-var 'gcloud beta run deploy $SERVICE_NAME --region us-central1 --allow-unauthenticated --project $PROJECT_ID --image gcr.io/$PROJECT_ID/$SERVICE_NAME --platform managed --update-env-vars CHANNELSECRET=$CHANNELSECRET,ACCESSTOKEN=$ACCESSTOKEN'",
+    "setWebhookURL": "bun run src/setWebhookURL.ts"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^7.7.0",
+    "cross-var": "^1.1.0",
+    "dotenv-cli": "^7.3.0"
+  }
+}

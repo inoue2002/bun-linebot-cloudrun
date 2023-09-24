@@ -1,0 +1,8 @@
+// gcpのプロジェクトID
+PROJECT_ID = '';
+// cloudRunのサービス名
+SERVICE_NAME = '';
+
+// LINEの設定
+CHANNELSECRET = '';
+ACCESSTOKEN = '';
