@@ -2,6 +2,11 @@
 
 [![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
 
+- Run on Google Cloudでうまく作成できない方へ
+  - 一度CloudRunとビルドイメージを削除することで1からやり直すことができます。以下2箇所から該当するものを削除してください。
+  - https://console.cloud.google.com/run
+  - https://console.cloud.google.com/gcr/images/
+
 To install dependencies:
 
 ```bash
