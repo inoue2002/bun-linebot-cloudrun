@@ -1,7 +1,7 @@
 {
   "name": "bun-linebot-example",
   "env": {
-    "CHANNELSECRET ": {
+    "CHANNELSECRET": {
       "description": "LINE Bot Channel Secret",
       "required": true
     },
