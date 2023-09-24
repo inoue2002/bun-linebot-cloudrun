@@ -1,5 +1,7 @@
 # bun-linebot
 
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
+
 To install dependencies:
 
 ```bash

@@ -1,0 +1,13 @@
+{
+  "name": "bun-linebot-example",
+  "env": {
+    "CHANNELSECRET ": {
+      "description": "LINE Bot Channel Secret",
+      "required": true
+    },
+    "ACCESSTOKEN": {
+      "description": "LINE Bot Channel Access Token",
+      "required": true
+    }
+  }
+}
