@@ -34,8 +34,5 @@ bun create github.com/<user>/<repo>
 
 ```
 
-https://demo-rh5ii5krxq-uc.a.run.app
-
-
- 参考にした記事
- https://qiita.com/ryo2132/items/8b957ed8b649f941fc3f
+参考にした記事
+- https://qiita.com/ryo2132/items/8b957ed8b649f941fc3f
